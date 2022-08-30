@@ -1,0 +1,320 @@
+            :root {
+               --blue: #2C2546;
+               --dark-blue: #1B1535;
+               --green: #00EB09;
+               --white: #fff;
+           }
+           
+           * {
+               margin: 0;
+               padding: 0;
+               text-decoration: none;
+               list-style-type: none;
+               box-sizing: border-box;
+               font-family: sans-serif;
+           }
+           
+           body {
+               background-color: var(--dark-blue);
+               color: var(--white)
+           }
+           
+           header {
+               align-items: center;
+               position: fixed;
+               width: 100%;
+               top: 0%;
+               padding: 2%;
+               font-weight: bold;
+               font-size: 12pt;
+               justify-content: center;
+               text-align: center;
+               background-color: var(--blue);
+           }
+           
+           .title {
+               color: var(--green);
+               border-bottom: 1px solid var(--white);
+               font-size: 15pt;
+           }
+           
+           .input-search {
+               width: 28%;
+               border: none;
+               border-radius: 0px 0px 0px 10px;
+               padding: 4px;
+           }
+           
+           .input-submit {
+               margin-left: -5px;
+               border: none;
+               border-radius: 0px 10px 0px 0px;
+               padding: 4px;
+               width: 3%;
+               font-weight: bold;
+           }
+           
+           body {
+               margin: 0;
+               padding: 0;
+               height: 100vh;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+           }
+           
+           nav {
+               margin-top: 20px;
+               text-align: center;
+           }
+           
+           nav ul {
+               display: flex;
+               gap: 20px;
+               justify-content: center;
+           }
+           
+           nav ul li a {
+               color: var(--green);
+           }
+           
+           nav ul li a:hover {
+               color: var(--white);
+           }
+           
+           .slider {
+               margin-top: 65%;
+               display: flex;
+               margin-left: auto !important;
+               margin-right: auto !important;
+               width: 800px;
+               height: 500px;
+               overflow: hidden;
+               transition: 1s;
+           }
+           
+           .slider h4 {
+               margin-top: 15%;
+               text-align: center;
+           }
+           
+           .slides {
+               display: flex;
+               transition: 1s;
+           }
+           
+           .slides input {
+               display: none;
+           }
+           
+           .slide {
+               transition: 1ms;
+           }
+           
+           .slide img {
+               width: 800px;
+               height: auto;
+           }
+           
+           .navigation-manual {
+               display: block;
+               position: absolute;
+               width: 800px;
+               margin-top: -250px;
+               margin-left: 85px;
+               display: flex;
+               justify-content: center;
+           }
+           
+           .manual-btn {
+               border: 3px solid #fff;
+               padding: 3px;
+               border-radius: 20px;
+               cursor: pointer;
+               transition: 0.4s;
+           }
+           
+           .manual-btn:not(:last-child) {
+               margin-right: 40px;
+           }
+           
+           .manual-btn:hover {
+               background: #fff;
+           }
+           
+           #radio1:checked~.first {
+               margin-left: 0;
+           }
+           
+           #radio2:checked~.first {
+               margin-left: -20%;
+           }
+           
+           .navigation-auto div:not(:last-child) {
+               margin-right: 40px;
+           }
+           
+           #radio1:checked~.navigation-auto .autobtn1 {
+               background: #fff;
+           }
+           
+           #radio2:checked~.navigation-auto .autobtn2 {
+               background: #fff;
+           }
+           
+           .overlay {
+               position: fixed;
+               top: 0;
+               bottom: 0;
+               left: 0;
+               right: 0;
+               background: rgba(0, 0, 0, 0.7);
+               transition: opacity 100ms;
+               visibility: hidden;
+               opacity: 20%;
+           }
+           
+           .overlay:target {
+               visibility: visible;
+               opacity: 1;
+           }
+           
+           .popup {
+               margin: 100px auto;
+               padding: 20px;
+               background: var(--dark-blue);
+               border-radius: 5px;
+               width: 30%;
+               position: relative;
+               transition: all 1s ease-in-out;
+               align-content: center;
+           }
+           
+           .popup h2 {
+               margin-top: 0;
+               color: var(--white);
+               font-family: Tahoma, Arial, sans-serif;
+           }
+           
+           .popup .close {
+               position: absolute;
+               top: 20px;
+               right: 30px;
+               transition: all 1ms;
+               font-size: 30px;
+               font-weight: bold;
+               text-decoration: none;
+               color: #333;
+           }
+           
+           .popup .close:hover {
+               color: #06D85F;
+           }
+           
+           .content {
+               max-height: 30%;
+               width: 50%;
+               text-align: justify;
+           }
+           
+           .title-p {
+               margin-top: -20%;
+               margin-bottom: 5%;
+               text-align: center;
+           }
+           
+           .populer {
+               display: grid;
+               grid-template-columns: repeat(3, 1fr);
+               width: 100%;
+               text-align: center;
+           }
+           
+           .populer img {
+               border-radius: 16px;
+           }
+           
+           .harga {
+               color: var(--green);
+               font-size: large;
+           }
+           
+           .link a {
+               color: var(--white);
+           }
+           
+           .link a:hover {
+               color: var(--green)
+           }
+           
+           .pesan {
+               background-color: var(--green);
+               padding: 2%;
+               border-radius: 2px;
+           }
+           
+           .pesan:hover {
+               background-color: var(--white);
+           }
+           
+           .pesan img {
+               width: 14px;
+               align-content: center;
+           }
+           
+           .tentang {
+               display: grid;
+               justify-content: center;
+               margin-top: 5%;
+               font-size: 12.6pt;
+               text-align: justify;
+           }
+           
+           .card {
+               background-color: var(--blue);
+               display: grid;
+               padding: 5%;
+               height: 110%;
+               width: auto;
+               border-radius: 0%;
+               align-content: center;
+           }
+           
+           .card h1 {
+               text-align: center;
+               align-content: center;
+           }
+           
+           html {
+               scroll-behavior: smooth;
+           }
+           
+           footer {
+               justify-content: center;
+               background-color: var(--blue);
+               margin-top: 5%;
+               padding: 2%;
+           }
+           
+           .sosmed {
+               display: block;
+               margin-left: auto;
+               margin-right: auto;
+               text-align: center;
+               font-size: 8pt;
+               margin-bottom: auto;
+           }
+           
+           .sosmed img {
+               text-align: center;
+               width: 20px;
+               grid-template-columns: repeat(4, 1fr);
+               margin-left: auto;
+               margin-right: auto;
+           }
+           
+           #copyright {
+               text-align: center;
+               padding: 10px;
+               font-size: 6pt;
+           }
